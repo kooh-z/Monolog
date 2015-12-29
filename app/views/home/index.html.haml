@@ -1,4 +1,11 @@
-%h1 Home#index
+%p.navbar-text 画像検索
+%form.navbar-form
+  %div.form-group
+    %input.form-control{type: 'text', placeholder: "キーワード"}
+    %button.brn.btn-info{type: 'submit'}検索
+
+%h1 Monolog
+
 - if user_signed_in?
   Logged in as
   = succeed "." do
