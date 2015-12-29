@@ -1,0 +1,18 @@
+%head
+  %meta{:charset => "UTF-8"}/
+  %title チャットしようぜ
+  = javascript_include_tag "application"
+  = javascript_include_tag "chat"
+%body
+  %h1 Chat Sample
+  %div
+    /-ようこそ、#{@current_user.user_name}さん
+  / jsに食わせたい情報などなど
+  / チャットのタイムラインとかテキストボックスとか
+  #timeline{:style => "margin:20px;"}
+    #chat{"data-uri" => "#{request.host}:3001/websocket"}
+  %hr/
+  %div
+    %form.form-horizontal
+      %input#msgbody.form-control{:type => "text"}/
+      %input#send.btn.btn-primary{:type => "button", :value => "送信"}/
