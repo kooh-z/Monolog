@@ -56,6 +56,8 @@ gem 'rails_admin'
 # backbone
 gem 'rails-assets-jquery'
 gem 'rails-assets-backbone'
+gem 'rails-assets-moment'
+gem 'rails-assets-jquery.ui'
 
 # make ERD
 gem 'rails-erd', group: [:development, :test]

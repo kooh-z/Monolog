@@ -12,8 +12,12 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.ui/ui/core
+//= require jquery.ui/ui/effect
+//= require jquery.ui/ui/effect-highlight
 //= require underscore
 //= require backbone
+//= require moment
 //= require turbolinks
 //= require_tree ./backbonejs
 //= require board_sample
