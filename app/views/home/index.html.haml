@@ -13,4 +13,17 @@
   \#{link_to "Login", new_user_session_path, :class => 'navbar-link'}
 %p Find me in app/views/home/index.html.erb
 
-\#{link_to "board", pages_home_path, :class => 'navbar-link'}
+#posts
+%form#add-post
+  %div
+    お名前：
+    %input#author{:required => "", :type => "text"}/
+  %div
+    本文：
+    %textarea#body{:required => ""}
+  %input{:type => "submit", :value => "投稿する"}/
+%script#post-template{:type => "text/template"}
+  %span {{- index }}
+  %span.author {{- author }}
+  %span.time {{- created_at }}
+  .body {{- body }}
