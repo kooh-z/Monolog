@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+source "https://rails-assets.org"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
@@ -52,6 +52,10 @@ gem 'kaminari'
 # To login
 gem 'devise'
 gem 'rails_admin'
+
+# backbone
+gem 'rails-assets-jquery'
+gem 'rails-assets-backbone'
 
 # make ERD
 gem 'rails-erd', group: [:development, :test]
